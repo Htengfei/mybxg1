@@ -17,7 +17,7 @@
 		}else{
 			$filename = 'login';//如果不是两层路径就跳转到登录界面
 		}
-
+ 	
 	}
 	//路径的格式 
 	// /main/index

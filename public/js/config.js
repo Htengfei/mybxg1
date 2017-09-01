@@ -1,16 +1,3 @@
-// require.config({
-// 	baseUrl:'/public/assets',
-// 	paths:{
-// 		jquery:'jquery/jquery',
-// 		cookie: 'jquery-cookie/jquery.cookie',
-// 		template: 'artTemplate/template-web', 
-// 		common:'../js/common',
-// 		login:'../js/login' 	
-// 	},
-// });
-
-
-
 
 require.config({
   baseUrl : '/public/assets',
@@ -19,6 +6,7 @@ require.config({
     cookie : 'jquery-cookie/jquery.cookie',
     template : 'artTemplate/template-web',
     common : '../js/common',
-    login : '../js/login'
+    login : '../js/login',
+    teacherlist : '../js/teacher-list'
   }
 });

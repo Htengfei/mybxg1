@@ -20,20 +20,15 @@ define(['jquery','template','cookie'],function($,template){
 	});//end 退出
 	//验证是否登录
 	var sessionId=$.cookie('PHPSESSID');
-console.log(sessionId);
-console.log(location.pathname);
 	if(!sessionId&&location.pathname!='/main/login'){
 		//sessionId不存在且不在登录页面，重新跳转到登录页面
 		location.href='/main/login' ;
 	}
 	//获取登录信息
 	var loginInfo=$.cookie('loginInfo');
-
-console.log(loginInfo);
 	var info=loginInfo?JSON.parse(loginInfo):{};
 
-	// //模板引擎渲染
-
+	// 模板引擎渲染
 	var tplstr='<div class="avatar img-circle"><img src="{{tc_avatar}}"></div><h4>{{tc_name}}</h4>';
 	var html=template.render(tplstr,info);
 	$('.aside .profile').html(html);

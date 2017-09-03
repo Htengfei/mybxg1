@@ -1,4 +1,6 @@
 define(['jquery','template','util','bootstrap'],function($,template,util){
+	// var ret=util.qs('uname');
+	// console.log(ret);
 	//设置导航菜单选中
 	util.setMenu(location.pathname);
 	//调用后台接口获取列表数据
@@ -13,7 +15,8 @@ define(['jquery','template','util','bootstrap'],function($,template,util){
 
 			// 绑定预览单击事件(如果写在下面，那么按钮还没有生成，没法绑定)
 			$('.preview').click(function(){
-				
+				var td=$(this).closest('td');//离a标签最近的父元素
+				var tcId=td.attr('data-tcId');
 				//根据ID查询数据
 				$.ajax({
 					type : 'get',

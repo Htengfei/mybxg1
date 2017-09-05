@@ -9,6 +9,7 @@ require.config({
     datepicker : 'bootstrap-datepicker/js/bootstrap-datepicker',
     language : 'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',//非标准模块，依赖jquery和datepicker
     validate : 'validate/jquery-validate.min',
+    uploadify : 'uploadify/jquery.uploadify.min',
     form : 'jquery-form/jquery.form',
     common : '../js/common',
     login : '../js/login',
@@ -27,6 +28,9 @@ require.config({
     },
     validate : {
       deps :['jquery']
+    },
+    uploadify : {
+      deps : ['jquery']
     }
 
   }

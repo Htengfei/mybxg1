@@ -11,6 +11,7 @@ require.config({
     validate : 'validate/jquery-validate.min',
     uploadify : 'uploadify/jquery.uploadify.min',
     form : 'jquery-form/jquery.form',
+    region : 'jquery-region/jquery.region',
     common : '../js/common',
     login : '../js/login',
     index : '../js/index',
@@ -27,7 +28,7 @@ require.config({
       deps :['jquery','datepicker']
     },
     validate : {
-      deps :['jquery']
+      deps : ['jquery']
     },
     uploadify : {
       deps : ['jquery']
